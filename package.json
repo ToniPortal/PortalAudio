@@ -6,11 +6,9 @@
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
     "inherits": "^2.0.3",
-    "materialize-css": "^1.0.0-rc.2",
     "mediaserver": "^0.1.1",
     "path": "^0.12.7",
     "process": "^0.11.10",
-    "sound-play": "^1.1.0",
     "util": "^0.10.4"
   },
   "scripts": {
