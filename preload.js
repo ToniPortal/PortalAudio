@@ -2,7 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const ipc = require('electron').ipcRenderer;
 
-  document.getElementById('audiostart').addEventListener('click', () => {
+  document.getElementById('modifier_classblue').addEventListener('click', () => {
       ipc.send('audiostart');
   });
 

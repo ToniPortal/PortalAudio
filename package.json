@@ -12,10 +12,9 @@
     "util": "^0.10.4"
   },
   "scripts": {
-    "start": "electron-forge start",
     "test": "electron .",
-    "package": "electron-forge package",
-    "make": "electron-forge make"
+    "start": "electron .",
+    "build": "electron-packager ./ portalaudio --platform=win32 --arch=x64 "
   },
   "repository": {
     "type": "git",

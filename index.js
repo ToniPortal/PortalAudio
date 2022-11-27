@@ -6,10 +6,16 @@ const {
 } = require('electron')
 const path = require('path')
 
-
+  // "scripts": {
+  //   "start": "electron-forge start",
+  //   "test": "electron .",
+  //   "package": "electron-forge package",
+  //   "make": "electron-forge make"
+  // },
+  
 function createWindow() {
     const win = new BrowserWindow({
-        width: 800,
+        width: 700,
         height: 1000,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
@@ -18,22 +24,9 @@ function createWindow() {
 
     win.loadFile('./web/index.html')
 
-    ipcMain.handle('dark-mode:toggle', () => {
-        if (nativeTheme.shouldUseDarkColors) {
-            nativeTheme.themeSource = 'light'
-        } else {
-            nativeTheme.themeSource = 'dark'
-        }
-        return nativeTheme.shouldUseDarkColors
-    })
-
-    ipcMain.handle('dark-mode:system', () => {
-        nativeTheme.themeSource = 'system'
-    })
-
     ipcMain.on('audiostart', (event, arg) => {
 
-
+            win.minimize();
     });
 
 }
