@@ -1,7 +1,5 @@
 # PortalAudio
 
-<img align="left" src="https://tonipastre.alwaysdata.net/electronportalv1.png">
-
 Actuellement disponible :
 
 > Barre synchroniser avec la musique.
